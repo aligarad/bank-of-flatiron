@@ -1,6 +1,6 @@
 import react from 'react';
 import { useState } from "react"
-​
+
 function Searchbar({handleSearch,handleBack,appendTransaction}) {
     let [searchValue,setSearchValue] = useState('')
     
@@ -8,7 +8,7 @@ function Searchbar({handleSearch,handleBack,appendTransaction}) {
         setSearchValue(value)
         console.log(searchValue)
     }
-​
+
         
     return ( 
      <div>
@@ -21,5 +21,5 @@ function Searchbar({handleSearch,handleBack,appendTransaction}) {
      </div>
      );
 }
-​
+
 export default Searchbar;

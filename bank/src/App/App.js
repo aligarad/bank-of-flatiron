@@ -1,15 +1,15 @@
 import { useEffect,useState } from "react";
 
 import './App.css';
-import Table from './components/Table.js';
-import Form from './components/form.js';
-import Searchbar from './components/searchBar.js';
+import Table from '../components/Table.js';
+import Form from '../components/form.js';
+import Searchbar from '../components/searchBar.js';
 function App() {
   const [transactions,setTransactions] = useState(null)
   const [initialState,setInitialState] = useState(null)
   
   useEffect(() =>{
-  fetch("http://localhost:3000/transactions")
+  fetch("http://localhost:8001/transactions")
   .then((response)=> response.json())
   .then((res)=>{ 
     sortByCategory(res)
