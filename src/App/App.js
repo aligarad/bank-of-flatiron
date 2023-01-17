@@ -9,7 +9,7 @@ function App() {
   const [initialState,setInitialState] = useState(null)
   
   useEffect(() =>{
-  fetch("http://localhost:8001/transactions")
+  fetch("https://my-json-server.typicode.com/aligarad/server/transactions")
   .then((response)=> response.json())
   .then((res)=>{ 
     sortByCategory(res)

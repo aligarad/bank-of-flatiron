@@ -34,7 +34,7 @@ const Form = ({className, removeTransaction}) => {
     }
 
     let handleSubmit = () =>{
-        fetch("http://localhost:8001/transactions",{
+        fetch("https://my-json-server.typicode.com/aligarad/server/transactions",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(newObj)
