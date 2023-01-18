@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-​
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -186,19 +186,19 @@ option:focus{
 #search-button:active{
   background-color: #26a7d6;
 }
-​
+
 #back-button{
   border: none;
   font-size: 1.2em;
   padding: .5em 1em;
   border-radius: 10px;
   position: relative;
-  background-color: red;
+  background-color: grey;
   color: white;
   left: -15em;
 }
 #back-button:hover{
-  background-color: rgb(137, 5, 5);
+  background-color: #06baf6;
 }
 #back-button:active{
 scale: .95;
@@ -212,6 +212,23 @@ scale: .95;
   padding: .6em 1em;
   /* border-radius: 10px; */
   position: relative;
-  background-color: red;
+  background-color: grey;
   color: white;
+
+}
+
+#add-button:hover{
+background-color: #06baf6;
+}
+
+
+
+.h2{
+  background-color:#06baf6;
+  height:200px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 30px;
 }

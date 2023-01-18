@@ -61,6 +61,7 @@ return 0;
   console.log(className)
   return (
     <div className="App">
+      <div className="h2"><h2>Bank of FLATIRON</h2></div>
       <div className = {newClassName} id='mainContent'>
       <Searchbar appendTransaction = {appendTransaction} handleBack = {handleBack} handleSearch = {handleSearch}/>
       {transactions && <Table data = {transactions}/>}
